@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="VisualGDB">
+      <UniqueIdentifier>{a326483a-6a41-4786-831e-27e8093ee5d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BSP">
+      <UniqueIdentifier>{07d340e0-c97b-4037-b1d5-8b2806995202}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BSP\HAL">
+      <UniqueIdentifier>{f336e4cf-0d8b-4eec-b529-d3729d92a9ea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Firmware-Debug.vgdbsettings">
+      <Filter>VisualGDB</Filter>
+    </None>
+    <None Include="Firmware-Release.vgdbsettings">
+      <Filter>VisualGDB</Filter>
+    </None>
+    <None Include="stm32.xml">
+      <Filter>VisualGDB</Filter>
+    </None>
+    <None Include="stm32.props">
+      <Filter>VisualGDB</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BSP\Src\stm32l4xx_hal_msp.c">
+      <Filter>BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="BSP\Src\stm32l4xx_it.c">
+      <Filter>BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="BSP\Src\system_stm32l4xx.c">
+      <Filter>BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="BSP\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal.c">
+      <Filter>BSP\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="BSP\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_i2c.c">
+      <Filter>BSP\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="BSP\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_i2c_ex.c">
+      <Filter>BSP\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="BSP\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr.c">
+      <Filter>BSP\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="BSP\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr_ex.c">
+      <Filter>BSP\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="BSP\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc.c">
+      <Filter>BSP\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="BSP\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart.c">
+      <Filter>BSP\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="BSP\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_cortex.c">
+      <Filter>BSP\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="BSP\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma.c">
+      <Filter>BSP\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="BSP\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma_ex.c">
+      <Filter>BSP\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="BSP\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash.c">
+      <Filter>BSP\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="BSP\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash_ex.c">
+      <Filter>BSP\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="BSP\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash_ramfunc.c">
+      <Filter>BSP\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="BSP\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_gpio.c">
+      <Filter>BSP\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="BSP\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c">
+      <Filter>BSP\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="BSP\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_tim.c">
+      <Filter>BSP\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="BSP\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_tim_ex.c">
+      <Filter>BSP\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="BSP\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart_ex.c">
+      <Filter>BSP\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="CommChannel.c" />
+    <ClCompile Include="HC06Configurator.c" />
+    <ClCompile Include="Time.c" />
+    <ClCompile Include="Log.c" />
+    <ClCompile Include="BSP\Src\main.c" />
+    <ClCompile Include="BSP\startup_stm32l432xx.s">
+      <Filter>BSP</Filter>
+    </ClCompile>
+    <ClCompile Include="Imu.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BSP\Inc\main.h">
+      <Filter>BSP</Filter>
+    </ClInclude>
+    <ClInclude Include="BSP\Inc\stm32l4xx_hal_conf.h">
+      <Filter>BSP</Filter>
+    </ClInclude>
+    <ClInclude Include="BSP\Inc\stm32l4xx_it.h">
+      <Filter>BSP</Filter>
+    </ClInclude>
+    <ClInclude Include="CommChannel.h" />
+    <ClInclude Include="HC06Configurator.h" />
+    <ClInclude Include="Basile.h" />
+    <ClInclude Include="Time.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="Imu.h" />
+  </ItemGroup>
+</Project>
