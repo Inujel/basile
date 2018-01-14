@@ -60,11 +60,11 @@
       <InterfaceID>stlink-v2-1</InterfaceID>
       <InterfaceSerialNumber>0670FF323535474B43123839</InterfaceSerialNumber>
       <Configuration xsi:type="com.visualgdb.edp.openocd.settings">
-        <CommandLine>-f interface/stlink-v2-1.cfg -f target/stm32l4x.cfg -c init -c "reset init"</CommandLine>
+        <CommandLine>-f interface/stlink-v2-1.cfg -c "transport select hla_swd" -f target/stm32l4x.cfg -c init -c "reset init"</CommandLine>
         <ExtraParameters>
-          <Frequency xsi:nil="true" />
+          <Frequency>480</Frequency>
           <BoostedFrequency xsi:nil="true" />
-          <ConnectUnderReset>false</ConnectUnderReset>
+          <ConnectUnderReset>true</ConnectUnderReset>
         </ExtraParameters>
         <LoadProgressGUIThreshold>131072</LoadProgressGUIThreshold>
         <ProgramMode>Enabled</ProgramMode>
@@ -79,7 +79,7 @@
         <PreferredTelnetPort>0</PreferredTelnetPort>
       </Configuration>
     </DebugMethod>
-    <AutoDetectRTOS>true</AutoDetectRTOS>
+    <AutoDetectRTOS>false</AutoDetectRTOS>
     <SemihostingSupport>Auto</SemihostingSupport>
     <StepIntoEntryPoint>false</StepIntoEntryPoint>
     <ReloadFirmwareOnReset>false</ReloadFirmwareOnReset>

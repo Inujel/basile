@@ -33,11 +33,11 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <GNUConfigurationType>Debug</GNUConfigurationType>
     <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
-    <ToolchainVersion>7.2.0/8.0.1/r2</ToolchainVersion>
+    <ToolchainVersion>6.2.0/7.12/r4</ToolchainVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
     <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
-    <ToolchainVersion>7.2.0/8.0.1/r2</ToolchainVersion>
+    <ToolchainVersion>6.2.0/7.12/r4</ToolchainVersion>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <ClCompile>
@@ -53,6 +53,9 @@
       <AdditionalLibraryNames>;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
       <LinkerScript />
     </Link>
+    <ToolchainSettingsContainer>
+      <FloatABI>hard</FloatABI>
+    </ToolchainSettingsContainer>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
     <ClCompile>
@@ -96,8 +99,11 @@
     </ClCompile>
     <ClCompile Include="CommChannel.c" />
     <ClCompile Include="HC06Configurator.c" />
+    <ClCompile Include="I2CDev\I2Cdev.c" />
+    <ClCompile Include="I2CDev\MPU6050\MPU6050.c" />
     <ClCompile Include="Imu.c" />
     <ClCompile Include="Log.c" />
+    <ClCompile Include="MotorDriver.c" />
     <ClCompile Include="Time.c" />
   </ItemGroup>
   <ItemGroup>
@@ -107,8 +113,11 @@
     <ClInclude Include="CommChannel.h" />
     <ClInclude Include="HC06Configurator.h" />
     <ClInclude Include="Basile.h" />
+    <ClInclude Include="I2CDev\I2Cdev.h" />
+    <ClInclude Include="I2CDev\MPU6050\MPU6050.h" />
     <ClInclude Include="Imu.h" />
     <ClInclude Include="Log.h" />
+    <ClInclude Include="MotorDriver.h" />
     <ClInclude Include="Time.h" />
   </ItemGroup>
 </Project>

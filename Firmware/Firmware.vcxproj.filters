@@ -10,6 +10,9 @@
     <Filter Include="BSP\HAL">
       <UniqueIdentifier>{f336e4cf-0d8b-4eec-b529-d3729d92a9ea}</UniqueIdentifier>
     </Filter>
+    <Filter Include="IMU">
+      <UniqueIdentifier>{88df49e2-7d89-44d8-a958-766f58cbadd8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Firmware-Debug.vgdbsettings">
@@ -97,7 +100,16 @@
     <ClCompile Include="BSP\startup_stm32l432xx.s">
       <Filter>BSP</Filter>
     </ClCompile>
-    <ClCompile Include="Imu.c" />
+    <ClCompile Include="Imu.c">
+      <Filter>IMU</Filter>
+    </ClCompile>
+    <ClCompile Include="I2CDev\I2Cdev.c">
+      <Filter>IMU</Filter>
+    </ClCompile>
+    <ClCompile Include="I2CDev\MPU6050\MPU6050.c">
+      <Filter>IMU</Filter>
+    </ClCompile>
+    <ClCompile Include="MotorDriver.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BSP\Inc\main.h">
@@ -114,6 +126,15 @@
     <ClInclude Include="Basile.h" />
     <ClInclude Include="Time.h" />
     <ClInclude Include="Log.h" />
-    <ClInclude Include="Imu.h" />
+    <ClInclude Include="Imu.h">
+      <Filter>IMU</Filter>
+    </ClInclude>
+    <ClInclude Include="I2CDev\I2Cdev.h">
+      <Filter>IMU</Filter>
+    </ClInclude>
+    <ClInclude Include="I2CDev\MPU6050\MPU6050.h">
+      <Filter>IMU</Filter>
+    </ClInclude>
+    <ClInclude Include="MotorDriver.h" />
   </ItemGroup>
 </Project>

@@ -47,8 +47,20 @@
 
 /* Private define ------------------------------------------------------------*/
 
-#define LED_GREEN_Pin GPIO_PIN_3
-#define LED_GREEN_GPIO_Port GPIOB
+#define MOT_EN_Pin GPIO_PIN_0
+#define MOT_EN_GPIO_Port GPIOA
+#define MOT_MS1_Pin GPIO_PIN_1
+#define MOT_MS1_GPIO_Port GPIOA
+#define MOT_MS2_Pin GPIO_PIN_2
+#define MOT_MS2_GPIO_Port GPIOA
+#define MOT_MS3_Pin GPIO_PIN_3
+#define MOT_MS3_GPIO_Port GPIOA
+#define MOT_LDIR_Pin GPIO_PIN_4
+#define MOT_LDIR_GPIO_Port GPIOA
+#define MOT_RDIR_Pin GPIO_PIN_5
+#define MOT_RDIR_GPIO_Port GPIOA
+#define MOT_LSTEP_Pin GPIO_PIN_6
+#define MOT_LSTEP_GPIO_Port GPIOA
 
 /* ########################## Assert Selection ############################## */
 /**

@@ -7,8 +7,9 @@ typedef enum
    LOG_DEBUG
 } LOG_SEVERITY;
 
-void Log(LOG_SEVERITY Severity_E, const char* message);
-void Log_Debug(const char* message);
-void Log_Info(const char* message);
-void Log_Error(const char* message);
+void Log(LOG_SEVERITY Severity_E, const char* format, ...);
+
+#define Log_Debug(msg, args...) Log(LOG_DEBUG, msg, ##args)
+#define Log_Info(msg, args...)  Log(LOG_INFO, msg, ##args)
+#define Log_Error(msg, args...) Log(LOG_ERROR, msg, ##args)
 
